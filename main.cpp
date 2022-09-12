@@ -5,6 +5,8 @@
 #include "imageHelper.h"
 #include "DoG.h"
 
+
+
 int main(int argc, char** argv) {
     if (argc != 2){
         std::cout << "Usage: DisplayImage.out <image_path>\n";
@@ -28,14 +30,6 @@ int main(int argc, char** argv) {
     //display(gauss_img);
 
     vector<vector<cv::Mat>> OrientedDoG = DoG::generateDoG(5,{3,5},7);
-
-
-
-
-
-
-
-
 
     std::cout << "Successful";
     return 0;
